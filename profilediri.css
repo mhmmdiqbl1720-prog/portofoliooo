@@ -1,0 +1,156 @@
+/* ===== BASE RESET ===== */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8fafc;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #f97316;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #f97316;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 58, 138, 0.7);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #facc15;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile {
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #f97316;
+}
+
+.profile h2 {
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.profile p {
+  max-width: 600px;
+  margin: auto;
+  color: #555;
+}
+
+/* ===== BIODATA CARDS ===== */
+.biodata {
+  margin: 4rem auto;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.biodata h2 {
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.biodata-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #f0f9ff;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #f97316;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 4px solid #f97316;
+}
